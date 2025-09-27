@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link rel="stylesheet" href="../html-css-homework/assets/styles/contact-html.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-nav">
+                <a href="#" class="navbar-brand"> <h1>პორტფოლიო</h1></a>
+                <ul class="navbar-nav">
+                    <li><a href="index.html">მთავარი</a></li>
+                    <li><a href="about.html">ჩემს შესახებ</a></li>
+                    <li><a href="portfolio.html">პორტფოლიო</a></li>
+                    <li><a href="contact.html" id="contact">კონტაქტი</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="contact-form-container">
+                <h2>კონტაქტი</h2>
+                <form class="contact-form">
+                    <label for="name">სახელი</label>
+                    <input type="text" id="name" name="name" placeholder="თქვენი სახელი" required>
+        
+                    <label for="email">ელ. ფოსტა</label>
+                    <input type="email" id="email" name="email" placeholder="თქვენი ელ. ფოსტა" required>
+        
+                    <label for="subject">თემა</label>
+                    <input type="text" id="subject" name="subject" placeholder="თემის მოკლე აღწერა" required>
+        
+                    <label for="message">მესიჯი</label>
+                    <textarea id="message" name="message" placeholder="თქვენი მესიჯი" required></textarea>
+        
+                    <button type="submit" class="submit-btn">გაგზავნა</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ჩემი პორტფოლიო</p>
+    </footer>
+</body>
+</html>

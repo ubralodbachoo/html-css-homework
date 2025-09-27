@@ -1,0 +1,165 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #634f4f;
+    color: white;
+    padding: 10px;
+}
+
+#port {
+    color: rgb(226, 182, 99);
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li {
+    margin-left: 20px;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 1em;
+}
+
+.navbar-nav a:hover {
+    background-color: #555;
+    border-radius: 0.5em;
+}
+
+/* გალერეა სტილი */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #634f4f;
+    color: rgb(226, 182, 99);
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+        font-size: 1.1rem; 
+    }
+
+    .navbar-nav li {
+        margin-left: 15px;
+    }
+
+    .gallery-container {
+        padding: 10px;
+    }
+
+    .gallery-item {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    }
+}
+
+@media (max-width: 768px) {
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+        padding: 15px;
+    }
+
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
